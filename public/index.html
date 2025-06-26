@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Gemini AI Chatbot</h1>
+            <div class="preferences-toggle" id="prefsToggle">⚙️</div>
+        </header>
+
+        <div class="chat-container">
+            <div id="chatBox" class="chat-box">
+                <div class="welcome-message">
+                    <h2>Welcome to Gemini AI</h2>
+                    <p>Ask me anything and I'll provide helpful, intelligent responses!</p>
+                    <div class="features">
+                        <div class="feature">
+                            <span>🔍</span> Web-connected knowledge
+                        </div>
+                        <div class="feature">
+                            <span>💡</span> Creative problem solving
+                        </div>
+                        <div class="feature">
+                            <span>⚡</span> Fast, accurate responses
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="loadingIndicator" class="loading-indicator">
+                <div class="dot-flashing">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <p>Gemini is thinking...</p>
+            </div>
+
+            <div class="input-container">
+                <textarea id="userInput" placeholder="Type your message here..." rows="1"></textarea>
+                <div class="button-container">
+                    <button id="sendButton" class="send-button">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                        </svg>
+                    </button>
+                    <button id="stopButton" class="stop-button" style="display: none;">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M6 6h12v12H6z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="preferencesPanel" class="preferences-panel">
+            <h3>Response Preferences</h3>
+            <div class="preference-group">
+                <label>Length:</label>
+                <select id="responseLength">
+                    <option value="short">Short</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="long">Long</option>
+                </select>
+            </div>
+            <div class="preference-group">
+                <label>Formality:</label>
+                <select id="formality">
+                    <option value="casual">Casual</option>
+                    <option value="neutral" selected>Neutral</option>
+                    <option value="formal">Formal</option>
+                </select>
+            </div>
+            <div class="preference-group">
+                <label>Tone:</label>
+                <select id="tone">
+                    <option value="friendly" selected>Friendly</option>
+                    <option value="professional">Professional</option>
+                    <option value="humorous">Humorous</option>
+                </select>
+            </div>
+            <div class="preference-group">
+                <label>Creativity: <span id="creativityValue">0.5</span></label>
+                <input type="range" id="creativity" min="0" max="1" step="0.1" value="0.5">
+            </div>
+            <button id="resetConversation" class="reset-button">New Conversation</button>
+        </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
