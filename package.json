@@ -10,6 +10,7 @@
     "setup": "npm install express-validator@7.0.1 && npm install"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-rate-limit": "^6.7.0",
@@ -19,8 +20,7 @@
     "memorystore": "^1.6.7",
     "morgan": "^1.10.0",
     "node-fetch": "^3.3.2",
-    "uuid": "^9.0.0",
-    "cors": "^2.8.5"
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
