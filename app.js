@@ -16,7 +16,7 @@ const { body, validationResult } = require('express-validator');
 // Configuration
 const config = {
   PORT: process.env.PORT || 3000,
-  GEMINI_API_KEY: process.env.GEMINI_API_KEY || 'AIzaSyArRZVNQNJs5huRj2ZUM2KHbvQPsoxOUKs',
+  GEMINI_API_KEY: process.env.GEMINI_API_KEY || 'AIzaSyAN08OjY_neEe7D6f9P9TeVGk-kkKUEj2g',
   SESSION_SECRET: process.env.SESSION_SECRET || uuidv4(),
   RATE_LIMIT_WINDOW: 15 * 60 * 1000,
   RATE_LIMIT_MAX: 100,
