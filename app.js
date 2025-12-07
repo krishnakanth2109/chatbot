@@ -23,7 +23,7 @@ const config = {
   MAX_SESSION_AGE: 24 * 60 * 60 * 1000,
   LOG_FILE: 'chatbot.log',
   CORS_ORIGIN: process.env.CORS_ORIGIN || '*',
-  GEMINI_API_URL: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent',
+  GEMINI_API_URL: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent',
   MAX_MESSAGE_LENGTH: 2000,
   HISTORY_LIMIT: 20
 };
